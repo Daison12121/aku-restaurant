@@ -1,0 +1,168 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Настройки медиа-файлов
+media_folder: "images"
+public_folder: "/images"
+
+# Настройки локализации
+i18n:
+  structure: multiple_fields
+  locales: [ru, en, tr]
+  default_locale: ru
+
+# Коллекции (типы контента)
+collections:
+  # Управление информацией о ресторане
+  - name: "restaurant"
+    label: "🏛️ Информация о ресторане"
+    files:
+      - label: "Основная информация"
+        name: "info"
+        file: "dishes.json"
+        fields:
+          - label: "Ресторан"
+            name: "restaurant"
+            widget: "object"
+            fields:
+              - label: "Название ресторана"
+                name: "name"
+                widget: "object"
+                i18n: true
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              
+              - label: "Слоган"
+                name: "tagline"
+                widget: "object"
+                i18n: true
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              
+              - {label: "Телефон", name: phone, widget: string}
+              - {label: "WhatsApp", name: whatsapp, widget: string}
+              
+              - label: "Адрес"
+                name: "address"
+                widget: "object"
+                i18n: true
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              
+              - label: "Часы работы"
+                name: "hours"
+                widget: "object"
+                i18n: true
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              
+              - {label: "Валюта", name: currency, widget: string}
+              - {label: "Язык по умолчанию", name: default_language, widget: select, options: ["ru", "en", "tr"]}
+
+  # Управление категориями блюд
+  - name: "categories"
+    label: "📂 Категории меню"
+    files:
+      - label: "Категории блюд"
+        name: "categories"
+        file: "dishes.json"
+        fields:
+          - label: "Категории"
+            name: "categories"
+            widget: "list"
+            fields:
+              - {label: "ID категории", name: id, widget: string}
+              - {label: "Иконка", name: icon, widget: string}
+              - label: "Название"
+                name: "name"
+                widget: "object"
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              - label: "Описание"
+                name: "description"
+                widget: "object"
+                fields:
+                  - {label: "Русский", name: ru, widget: text}
+                  - {label: "English", name: en, widget: text}
+                  - {label: "Türkçe", name: tr, widget: text}
+
+  # Управление блюдами
+  - name: "dishes"
+    label: "🍽️ Блюда"
+    files:
+      - label: "Меню ресторана"
+        name: "menu"
+        file: "dishes.json"
+        fields:
+          - label: "Блюда"
+            name: "dishes"
+            widget: "list"
+            summary: "{{fields.title.ru}} - {{fields.price}}₺"
+            fields:
+              - {label: "ID блюда", name: id, widget: string}
+              - {label: "Категория", name: category, widget: select, options: ["signature", "traditional", "premium"]}
+              - {label: "Активно", name: active, widget: boolean, default: true}
+              - {label: "Рекомендуем", name: featured, widget: boolean, default: false}
+              
+              - label: "Название блюда"
+                name: "title"
+                widget: "object"
+                fields:
+                  - {label: "Русский", name: ru, widget: string}
+                  - {label: "English", name: en, widget: string}
+                  - {label: "Türkçe", name: tr, widget: string}
+              
+              - label: "Описание"
+                name: "description"
+                widget: "object"
+                fields:
+                  - {label: "Русский", name: ru, widget: text}
+                  - {label: "English", name: en, widget: text}
+                  - {label: "Türkçe", name: tr, widget: text}
+              
+              - label: "Ингредиенты"
+                name: "ingredients"
+                widget: "object"
+                fields:
+                  - {label: "Русский", name: ru, widget: list, allow_add: true}
+                  - {label: "English", name: en, widget: list, allow_add: true}
+                  - {label: "Türkçe", name: tr, widget: list, allow_add: true}
+              
+              - {label: "Цена (₺)", name: price, widget: number}
+              - {label: "Изображение", name: image, widget: image}
+              - {label: "Рейтинг (1-5)", name: rating, widget: number, min: 1, max: 5}
+              - {label: "Время приготовления (мин)", name: preparation_time, widget: number}
+              
+              - label: "Аллергены"
+                name: "allergens"
+                widget: "select"
+                multiple: true
+                options: 
+                  - {label: "Орехи", value: "nuts"}
+                  - {label: "Молочные продукты", value: "dairy"}
+                  - {label: "Глютен", value: "gluten"}
+                  - {label: "Морепродукты", value: "seafood"}
+                  - {label: "Яйца", value: "eggs"}
+                required: false
+              
+              - label: "Диетические особенности"
+                name: "dietary"
+                widget: "select"
+                multiple: true
+                options:
+                  - {label: "Вегетарианское", value: "vegetarian"}
+                  - {label: "Веганское", value: "vegan"}
+                  - {label: "Халяль", value: "halal"}
+                  - {label: "Без глютена", value: "gluten-free"}
+                required: false
