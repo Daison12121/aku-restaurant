@@ -7,7 +7,6 @@
     "whatsapp": "905551234567",
     "currency": "₺"
   },
-
   "categories": [
     {
       "id": "signature",
@@ -31,7 +30,6 @@
       "icon": "💎"
     }
   ],
-
   "dishes": [
     {
       "id": "dolma-golden",
