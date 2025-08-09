@@ -1,12 +1,13 @@
 {
   "restaurant": {
     "name_ru": "Ресторан БАКУ",
-    "name_en": "BAKU Restaurant",
+    "name_en": "BAKU Restaurant", 
     "name_tr": "BAKÜ Restoranı",
     "phone": "+90 (242) 555-12-34",
     "whatsapp": "905551234567",
     "currency": "₺"
   },
+
   "categories": [
     {
       "id": "signature",
@@ -16,7 +17,7 @@
       "icon": "⭐"
     },
     {
-      "id": "traditional",
+      "id": "traditional", 
       "name_ru": "Традиционные",
       "name_en": "Traditional",
       "name_tr": "Geleneksel",
@@ -25,251 +26,117 @@
     {
       "id": "premium",
       "name_ru": "Премиум",
-      "name_en": "Premium",
+      "name_en": "Premium", 
       "name_tr": "Premium",
       "icon": "💎"
     }
   ],
+
   "dishes": [
     {
-      "ingredients_ru": [
-        "Виноградные листья",
-        "Баранина",
-        "Рис басмати",
-        "Лук",
-        "Зелень",
-        "Секретные специи"
-      ],
-      "description_tr": "Kuzu eti, pirinç ve aromatik baharatlardan hazırlanan nefis iç harçlı asma yaprağı. Gizli malzemelerle hazırlanan özel tarifimiz.",
-      "title_tr": "Altın Dolma",
-      "ingredients_en": [
-        "Grape leaves",
-        "Lamb",
-        "Basmati rice",
-        "Onion",
-        "Fresh herbs",
-        "Secret spices"
-      ],
-      "description_ru": "Виноградные листья с изысканной начинкой из баранины, риса и ароматных специй. Наш фирменный рецепт с секретными ингредиентами.",
-      "active": true,
-      "price": 120,
-      "title_ru": "Долма «Золотая»",
-      "description_en": "Grape leaves with exquisite filling of lamb, rice and aromatic spices. Our signature recipe with secret ingredients.",
-      "featured": true,
-      "title_en": "Golden Dolma",
-      "allergens": [],
-      "dietary": [
-        "halal"
-      ],
-      "preparation_time": 45,
       "id": "dolma-golden",
-      "image": null,
-      "ingredients_tr": [
-        "Asma yaprağı",
-        "Kuzu eti",
-        "Basmati pirinç",
-        "Soğan",
-        "Taze otlar",
-        "Gizli baharatlar"
-      ],
-      "rating": 5,
-      "category": "signature"
-    },
-    {
-      "ingredients_ru": [
-        "Рис басмати",
-        "Баранина",
-        "Курага",
-        "Изюм",
-        "Миндаль",
-        "Барбарис",
-        "Шафран",
-        "Топленое масло"
-      ],
-      "description_tr": "Kuzu eti, kuru meyve ve cevizli kraliyet pilavı. Bakır kazanda kömür ateşinde eski tarife göre hazırlanır.",
-      "title_tr": "Şah Pilavı",
-      "ingredients_en": [
-        "Basmati rice",
-        "Lamb",
-        "Dried apricots",
-        "Raisins",
-        "Almonds",
-        "Barberries",
-        "Saffron",
-        "Ghee"
-      ],
-      "description_ru": "Королевский плов с бараниной, сухофруктами и орехами. Готовится по старинному рецепту в медном казане на углях.",
+      "category": "signature",
       "active": true,
-      "price": 200,
-      "title_ru": "Плов «Шах»",
-      "description_en": "Royal pilaf with lamb, dried fruits and nuts. Prepared according to an ancient recipe in a copper cauldron over coals.",
       "featured": true,
-      "title_en": "Shah Pilaf",
-      "allergens": [
-        "nuts"
-      ],
-      "dietary": [
-        "halal"
-      ],
-      "preparation_time": 60,
-      "id": "plov-shah",
-      "image": "https://images.unsplash.com/photo-1596040033229-a2b1b750cf65?w=500",
-      "ingredients_tr": [
-        "Basmati pirinç",
-        "Kuzu eti",
-        "Kuru kayısı",
-        "Kuru üzüm",
-        "Badem",
-        "Kırmızı frenk üzümü",
-        "Safran",
-        "Tereyağı"
-      ],
-      "rating": 5,
-      "category": "premium"
-    },
-    {
-      "ingredients_ru": [
-        "Баранина",
-        "Говядина",
-        "Лук",
-        "Петрушка",
-        "Кинза",
-        "Специи",
-        "Красный лук"
-      ],
-      "description_tr": "Mangalda aromatik dumanla pişirilmiş kuzu ve sığır etinden sulu köfte. Soğan ve taze otlarla servis edilir.",
-      "title_tr": "Klasik Lüle Kebap",
-      "ingredients_en": [
-        "Lamb",
-        "Beef",
-        "Onion",
-        "Parsley",
-        "Cilantro",
-        "Spices",
-        "Red onion"
-      ],
-      "description_ru": "Сочные рубленые котлеты из баранины и говядины, приготовленные на мангале с ароматным дымком. Подается с луком и зеленью.",
-      "active": true,
-      "price": 150,
-      "title_ru": "Люля-кебаб классический",
-      "description_en": "Juicy minced cutlets from lamb and beef, cooked on a grill with aromatic smoke. Served with onions and fresh herbs.",
-      "featured": false,
-      "title_en": "Classic Lula Kebab",
+      "title_ru": "Долма «Золотая»",
+      "title_en": "Golden Dolma", 
+      "title_tr": "Altın Dolma",
+      "description_ru": "Виноградные листья с изысканной начинкой из баранины, риса и ароматных специй. Наш фирменный рецепт с секретными ингредиентами.",
+      "description_en": "Grape leaves with exquisite filling of lamb, rice and aromatic spices. Our signature recipe with secret ingredients.",
+      "description_tr": "Kuzu eti, pirinç ve aromatik baharatlardan hazırlanan nefis iç harçlı asma yaprağı. Gizli malzemelerle hazırlanan özel tarifimiz.",
+      "ingredients_ru": ["Виноградные листья", "Баранина", "Рис басмати", "Лук", "Зелень", "Секретные специи"],
+      "ingredients_en": ["Grape leaves", "Lamb", "Basmati rice", "Onion", "Fresh herbs", "Secret spices"],
+      "ingredients_tr": ["Asma yaprağı", "Kuzu eti", "Basmati pirinç", "Soğan", "Taze otlar", "Gizli baharatlar"],
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1566843972142-a9783e97d0c9?w=500&h=400&fit=crop",
+      "rating": 5.0,
+      "preparation_time": 45,
       "allergens": [],
-      "dietary": [
-        "halal"
-      ],
-      "preparation_time": 25,
-      "id": "kebab-lula",
-      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500",
-      "ingredients_tr": [
-        "Kuzu eti",
-        "Sığır eti",
-        "Soğan",
-        "Maydanoz",
-        "Kişniş",
-        "Baharat",
-        "Kırmızı soğan"
-      ],
-      "rating": 4.5,
-      "category": "traditional"
+      "dietary": ["halal"]
     },
     {
-      "ingredients_ru": [
-        "Тесто домашнее",
-        "Баранина",
-        "Говядина",
-        "Лук",
-        "Бульон",
-        "Укроп",
-        "Мята"
-      ],
-      "description_tr": "Aromatik et suyunda taze otlarla servis edilen geleneksel küçük mantı. Büyükannelerimizden ev yapımı tarif.",
-      "title_tr": "Düşbere",
-      "ingredients_en": [
-        "Homemade dough",
-        "Lamb",
-        "Beef",
-        "Onion",
-        "Broth",
-        "Dill",
-        "Mint"
-      ],
-      "description_ru": "Традиционные мелкие пельмени в ароматном бульоне с зеленью. Домашний рецепт от наших бабушек.",
+      "id": "plov-shah",
+      "category": "premium",
       "active": true,
-      "price": 85,
-      "title_ru": "Дюшбара",
-      "description_en": "Traditional small dumplings in aromatic broth with herbs. Homemade recipe from our grandmothers.",
-      "featured": false,
-      "title_en": "Dushbara",
-      "allergens": [
-        "gluten"
-      ],
-      "dietary": [
-        "halal"
-      ],
-      "preparation_time": 35,
-      "id": "dushbara",
-      "image": "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500",
-      "ingredients_tr": [
-        "Ev yapımı hamur",
-        "Kuzu eti",
-        "Sığır eti",
-        "Soğan",
-        "Et suyu",
-        "Dereotu",
-        "Nane"
-      ],
-      "rating": 4.3,
-      "category": "traditional"
-    },
-    {
-      "ingredients_ru": [
-        "Тесто фило",
-        "Фисташки",
-        "Грецкие орехи",
-        "Мед горный",
-        "Сливочное масло",
-        "Розовая вода"
-      ],
-      "description_tr": "Pastane şefimizin tarifine göre antep fıstığı ve ballı özel baklava. Ağızda eriyor!",
-      "title_tr": "BAKÜ Baklavası",
-      "ingredients_en": [
-        "Phyllo dough",
-        "Pistachios",
-        "Walnuts",
-        "Mountain honey",
-        "Butter",
-        "Rose water"
-      ],
-      "description_ru": "Авторская пахлава с фисташками и медом по рецепту нашего шеф-кондитера. Тает во рту!",
-      "active": true,
-      "price": 65,
-      "title_ru": "Пахлава «БАКУ»",
-      "description_en": "Signature baklava with pistachios and honey according to our pastry chef's recipe. Melts in your mouth!",
       "featured": true,
-      "title_en": "BAKU Baklava",
-      "allergens": [
-        "nuts",
-        "gluten",
-        "dairy"
-      ],
-      "dietary": [
-        "vegetarian"
-      ],
-      "preparation_time": 15,
+      "title_ru": "Плов «Шах»",
+      "title_en": "Shah Pilaf",
+      "title_tr": "Şah Pilavı",
+      "description_ru": "Королевский плов с бараниной, сухофруктами и орехами. Готовится по старинному рецепту в медном казане на углях.",
+      "description_en": "Royal pilaf with lamb, dried fruits and nuts. Prepared according to an ancient recipe in a copper cauldron over coals.",
+      "description_tr": "Kuzu eti, kuru meyve ve cevizli kraliyet pilavı. Bakır kazanda kömür ateşinde eski tarife göre hazırlanır.",
+      "ingredients_ru": ["Рис басмати", "Баранина", "Курага", "Изюм", "Миндаль", "Барбарис", "Шафран", "Топленое масло"],
+      "ingredients_en": ["Basmati rice", "Lamb", "Dried apricots", "Raisins", "Almonds", "Barberries", "Saffron", "Ghee"],
+      "ingredients_tr": ["Basmati pirinç", "Kuzu eti", "Kuru kayısı", "Kuru üzüm", "Badem", "Kırmızı frenk üzümü", "Safran", "Tereyağı"],
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1596040033229-a2b1b750cf65?w=500&h=400&fit=crop",
+      "rating": 5.0,
+      "preparation_time": 60,
+      "allergens": ["nuts"],
+      "dietary": ["halal"]
+    },
+    {
+      "id": "kebab-lula",
+      "category": "traditional",
+      "active": true,
+      "featured": false,
+      "title_ru": "Люля-кебаб классический",
+      "title_en": "Classic Lula Kebab",
+      "title_tr": "Klasik Lüle Kebap",
+      "description_ru": "Сочные рубленые котлеты из баранины и говядины, приготовленные на мангале с ароматным дымком. Подается с луком и зеленью.",
+      "description_en": "Juicy minced cutlets from lamb and beef, cooked on a grill with aromatic smoke. Served with onions and fresh herbs.",
+      "description_tr": "Mangalda aromatik dumanla pişirilmiş kuzu ve sığır etinden sulu köfte. Soğan ve taze otlarla servis edilir.",
+      "ingredients_ru": ["Баранина", "Говядина", "Лук", "Петрушка", "Кинза", "Специи", "Красный лук"],
+      "ingredients_en": ["Lamb", "Beef", "Onion", "Parsley", "Cilantro", "Spices", "Red onion"],
+      "ingredients_tr": ["Kuzu eti", "Sığır eti", "Soğan", "Maydanoz", "Kişniş", "Baharat", "Kırmızı soğan"],
+      "price": 150,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop",
+      "rating": 4.5,
+      "preparation_time": 25,
+      "allergens": [],
+      "dietary": ["halal"]
+    },
+    {
+      "id": "dushbara",
+      "category": "traditional",
+      "active": true,
+      "featured": false,
+      "title_ru": "Дюшбара",
+      "title_en": "Dushbara",
+      "title_tr": "Düşbere",
+      "description_ru": "Традиционные мелкие пельмени в ароматном бульоне с зеленью. Домашний рецепт от наших бабушек.",
+      "description_en": "Traditional small dumplings in aromatic broth with herbs. Homemade recipe from our grandmothers.",
+      "description_tr": "Aromatik et suyunda taze otlarla servis edilen geleneksel küçük mantı. Büyükannelerimizden ev yapımı tarif.",
+      "ingredients_ru": ["Тесто домашнее", "Баранина", "Говядина", "Лук", "Бульон", "Укроп", "Мята"],
+      "ingredients_en": ["Homemade dough", "Lamb", "Beef", "Onion", "Broth", "Dill", "Mint"],
+      "ingredients_tr": ["Ev yapımı hamur", "Kuzu eti", "Sığır eti", "Soğan", "Et suyu", "Dereotu", "Nane"],
+      "price": 85,
+      "image": "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=400&fit=crop",
+      "rating": 4.3,
+      "preparation_time": 35,
+      "allergens": ["gluten"],
+      "dietary": ["halal"]
+    },
+    {
       "id": "baklava-baku",
-      "image": "https://images.unsplash.com/photo-1571197119488-b4c1c2ebb179?w=500",
-      "ingredients_tr": [
-        "Yufka hamuru",
-        "Antep fıstığı",
-        "Ceviz",
-        "Dağ balı",
-        "Tereyağı",
-        "Gül suyu"
-      ],
+      "category": "signature",
+      "active": true,
+      "featured": true,
+      "title_ru": "Пахлава «БАКУ»",
+      "title_en": "BAKU Baklava",
+      "title_tr": "BAKÜ Baklavası",
+      "description_ru": "Авторская пахлава с фисташками и медом по рецепту нашего шеф-кондитера. Тает во рту!",
+      "description_en": "Signature baklava with pistachios and honey according to our pastry chef's recipe. Melts in your mouth!",
+      "description_tr": "Pastane şefimizin tarifine göre antep fıstığı ve ballı özel baklava. Ağızda eriyor!",
+      "ingredients_ru": ["Тесто фило", "Фисташки", "Грецкие орехи", "Мед горный", "Сливочное масло", "Розовая вода"],
+      "ingredients_en": ["Phyllo dough", "Pistachios", "Walnuts", "Mountain honey", "Butter", "Rose water"],
+      "ingredients_tr": ["Yufka hamuru", "Antep fıstığı", "Ceviz", "Dağ balı", "Tereyağı", "Gül suyu"],
+      "price": 65,
+      "image": "https://images.unsplash.com/photo-1571197119488-b4c1c2ebb179?w=500&h=400&fit=crop",
       "rating": 4.9,
-      "category": "signature"
+      "preparation_time": 15,
+      "allergens": ["nuts", "gluten", "dairy"],
+      "dietary": ["vegetarian"]
     }
   ]
 }
